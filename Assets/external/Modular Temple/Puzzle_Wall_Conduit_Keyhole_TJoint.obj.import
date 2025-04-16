@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dg2xcmh50ad15"
+path="res://.godot/imported/Puzzle_Wall_Conduit_Keyhole_TJoint.obj-f10bb00dc3faf59f88c35715c0f55b53.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Puzzle_Wall_Conduit_Keyhole_TJoint.obj-f10bb00dc3faf59f88c35715c0f55b53.mesh"]
+
+source_file="res://Assets/external/Modular Temple/Puzzle_Wall_Conduit_Keyhole_TJoint.obj"
+dest_files=["res://.godot/imported/Puzzle_Wall_Conduit_Keyhole_TJoint.obj-f10bb00dc3faf59f88c35715c0f55b53.mesh", "res://.godot/imported/Puzzle_Wall_Conduit_Keyhole_TJoint.obj-f10bb00dc3faf59f88c35715c0f55b53.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

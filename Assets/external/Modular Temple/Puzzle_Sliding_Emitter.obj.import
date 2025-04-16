@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bk3wb5wpktc7a"
+path="res://.godot/imported/Puzzle_Sliding_Emitter.obj-3d70ab9b4ef6e0f5e6bd3624e0fc2aeb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Puzzle_Sliding_Emitter.obj-3d70ab9b4ef6e0f5e6bd3624e0fc2aeb.mesh"]
+
+source_file="res://Assets/external/Modular Temple/Puzzle_Sliding_Emitter.obj"
+dest_files=["res://.godot/imported/Puzzle_Sliding_Emitter.obj-3d70ab9b4ef6e0f5e6bd3624e0fc2aeb.mesh", "res://.godot/imported/Puzzle_Sliding_Emitter.obj-3d70ab9b4ef6e0f5e6bd3624e0fc2aeb.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

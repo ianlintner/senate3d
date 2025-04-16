@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bdx10md3w7j1g"
+path="res://.godot/imported/Prop_Floor_Switch.obj-6cb62376391cac35484d78abab93a069.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Floor_Switch.obj-6cb62376391cac35484d78abab93a069.mesh"]
+
+source_file="res://Assets/external/Temple/Prop_Floor_Switch.obj"
+dest_files=["res://.godot/imported/Prop_Floor_Switch.obj-6cb62376391cac35484d78abab93a069.mesh", "res://.godot/imported/Prop_Floor_Switch.obj-6cb62376391cac35484d78abab93a069.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

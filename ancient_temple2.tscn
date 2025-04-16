@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://lnlvbictyf5y"]
+
+[ext_resource type="PackedScene" uid="uid://bjhktmhnmsxlh" path="res://Assets/external/ancient-temple/ancient_temple.blend" id="1_p0y5s"]
+
+[node name="ancient_temple" instance=ExtResource("1_p0y5s")]
+
+[node name="Light" parent="." index="0"]
+visible = false

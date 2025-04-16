@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bsqtvw0kvd1g5"
+path="res://.godot/imported/Puzzle_Sliding_Base.obj-c26f9445e45412a8b5967dd7aa6810ff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Puzzle_Sliding_Base.obj-c26f9445e45412a8b5967dd7aa6810ff.mesh"]
+
+source_file="res://Assets/external/Modular Temple/Puzzle_Sliding_Base.obj"
+dest_files=["res://.godot/imported/Puzzle_Sliding_Base.obj-c26f9445e45412a8b5967dd7aa6810ff.mesh", "res://.godot/imported/Puzzle_Sliding_Base.obj-c26f9445e45412a8b5967dd7aa6810ff.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

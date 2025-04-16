@@ -1,0 +1,73 @@
+# Dialog UI Setup Instructions
+
+Follow these steps to create a simple dialog UI that can be used with NPCs:
+
+## 1. Create the Dialog UI Scene
+
+1. Open Godot Editor
+2. Create a new scene with a Control node as the root
+3. Name the root node "DialogUI"
+4. Add the node to the "dialog_ui" group (this is important for automatic detection):
+   - Select the DialogUI node
+   - In the Inspector, go to Node > Groups and add "dialog_ui"
+   - Make sure the group name is all lowercase
+5. Attach the "NPCDialog.gd" script to this node (Scripts/UI/NPCDialog.gd)
+
+## 2. Create the Dialog Box
+
+1. Add a Panel (or NinePatchRect) as a child of DialogUI and name it "DialogBox"
+2. Position it at the bottom of the screen (e.g., anchor to bottom-center)
+3. Set its size to cover about 1/4 of the screen height and most of the width
+4. Style it as desired (background color, border, etc.)
+
+## 3. Add Text Elements
+
+1. Add a Label as a child of DialogBox and name it "NameLabel"
+   - Position it at the top-left of the DialogBox
+   - Set its size and font properties as desired
+   - This will display the NPC's name
+
+2. Add a Label as a child of DialogBox and name it "DialogText"
+   - Position it below the NameLabel and make it fill most of the DialogBox
+   - Set its size and font properties as desired
+   - Enable autowrap for the text
+   - This will display the dialog text
+
+3. Optionally, add a Label or TextureRect at the bottom-right with text like "[Space]" or a continue icon
+   - This indicates to the player how to advance the dialog
+
+## 4. Configure the Dialog Script
+
+1. Select the DialogUI node
+2. In the Inspector, set the exported variables:
+   - dialog_box_path: NodePath to the DialogBox node
+   - dialog_text_path: NodePath to the DialogText node
+   - dialog_name_path: NodePath to the NameLabel node
+
+## 5. Save the Scene
+
+1. Save the scene as "dialog_ui.tscn" in the Scenes/UI/ directory
+
+## 6. Add to Main Scene
+
+To use the dialog UI:
+
+1. Instance the dialog_ui.tscn scene in your main level scene
+2. Make sure it's added to the CanvasLayer to ensure it appears on top of the 3D world
+3. Set its initial visibility to false (it will be shown when dialog starts)
+
+## 7. Connect to NPCs
+
+To connect NPCs to the dialog system:
+
+1. When setting up an NPC with dialog capability:
+   - Add the NPCDialogInteraction.gd script instead of (or in addition to) NPCInteraction.gd
+   - Set the dialog_ui_path to point to your DialogUI node
+   - Configure the npc_name and dialog_lines in the Inspector
+
+## Notes on Dialog System
+
+- The dialog system uses the "ui_accept" input action (usually Space or Enter) to advance dialog
+- Dialog will automatically start when the player enters the NPC's interaction radius
+- After dialog finishes, there's a 2-second cooldown before the NPC can start dialog again
+- You can extend this system by adding animations, sound effects, or more complex dialog trees

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cngeobnhc06ok"
+path="res://.godot/imported/base-char-male.obj-88a03306d4c53a3b320ab085bf85dd5e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/base-char-male.obj-88a03306d4c53a3b320ab085bf85dd5e.mesh"]
+
+source_file="res://Assets/external/basechar/base-char-male.obj"
+dest_files=["res://.godot/imported/base-char-male.obj-88a03306d4c53a3b320ab085bf85dd5e.mesh", "res://.godot/imported/base-char-male.obj-88a03306d4c53a3b320ab085bf85dd5e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

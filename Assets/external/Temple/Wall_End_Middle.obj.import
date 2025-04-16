@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://3r0qvh4e1vik"
+path="res://.godot/imported/Wall_End_Middle.obj-01c4e87acaaa3f19e0dc67282793cdd9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Wall_End_Middle.obj-01c4e87acaaa3f19e0dc67282793cdd9.mesh"]
+
+source_file="res://Assets/external/Temple/Wall_End_Middle.obj"
+dest_files=["res://.godot/imported/Wall_End_Middle.obj-01c4e87acaaa3f19e0dc67282793cdd9.mesh", "res://.godot/imported/Wall_End_Middle.obj-01c4e87acaaa3f19e0dc67282793cdd9.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,24 @@
+# Blender MTL File: 'base-char-male.blend'
+# Material Count: 2
+
+newmtl Metal
+Ns 749.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.037577 0.037451 0.039685
+Ks 0.563954 0.513992 0.513992
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd metal2.png
+
+newmtl default
+Ns 29.411765
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.116881 0.116881 0.116881
+Ke 0.528000 0.528000 0.528000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd skin.png

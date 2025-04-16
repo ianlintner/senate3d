@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://evypj07j2g8o"
+path="res://.godot/imported/Puzzle_Closed_Conduit_Control_Connector.obj-997b870528d6666abafb6db546228caf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Puzzle_Closed_Conduit_Control_Connector.obj-997b870528d6666abafb6db546228caf.mesh"]
+
+source_file="res://Assets/external/Modular Temple/Puzzle_Closed_Conduit_Control_Connector.obj"
+dest_files=["res://.godot/imported/Puzzle_Closed_Conduit_Control_Connector.obj-997b870528d6666abafb6db546228caf.mesh", "res://.godot/imported/Puzzle_Closed_Conduit_Control_Connector.obj-997b870528d6666abafb6db546228caf.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

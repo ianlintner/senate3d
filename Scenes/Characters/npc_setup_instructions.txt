@@ -1,0 +1,83 @@
+# NPC Scene Setup Instructions
+
+Since we can't directly create .tscn files through this interface, follow these steps to create the NPC scene in the Godot editor:
+
+## 1. Create the Base Scene
+
+1. Open Godot Editor
+2. Create a new scene with a CharacterBody3D as the root node
+3. Name the root node "NPC"
+4. Attach the "NPC.gd" script to this node (Scripts/Characters/NPC.gd)
+
+## 2. Add Collision Shape
+
+1. Add a CollisionShape3D node as a child of the NPC node
+2. Add a CapsuleShape3D to the CollisionShape3D
+3. Set the CapsuleShape3D height to 1.8 and radius to 0.4
+4. Position the CollisionShape3D at (0, 0.9, 0) to center it on the character
+
+## 3. Add Character Mesh
+
+1. Add a Node3D as a child of the NPC node and name it "Mesh"
+2. Import the same character model used for the player:
+   - Add a MeshInstance3D node as a child of the Mesh node
+   - Instance the Object_Character.glb model (from Assets/Models/Characters/)
+
+## 4. Set Up Animation
+
+1. Add an AnimationTree node as a child of the NPC node
+2. Configure the AnimationTree with the same structure as the player's AnimationTree:
+   - Add a StateMachine with "ground_air_transition" parameter
+   - Add a Blend2 node with "iwr_blend" parameter (for Idle-Walk-Run blending)
+   - Connect animations: 01_Idle.res, 02_Run.res, 03_Walk.res, 04_Air.res
+   - Set up transitions between states
+
+## 5. Add Interaction Functionality (Optional)
+
+You can choose one of the following interaction options:
+
+### Option A: Basic Interaction
+
+1. Add a Node as a child of the NPC node and name it "Interaction"
+2. Attach the "NPCInteraction.gd" script to this node (Scripts/Characters/NPCInteraction.gd)
+3. Configure the interaction parameters in the Inspector:
+   - interaction_radius: How close the player needs to be to trigger interaction (default: 3.0)
+   - look_at_player: Whether the NPC should turn to face the player when nearby (default: true)
+   - follow_player: Whether the NPC should follow the player when nearby (default: false)
+   - follow_distance: How close the NPC tries to get when following (default: 2.0)
+
+### Option B: Dialog Interaction
+
+1. First, set up the Dialog UI following the instructions in "Scenes/UI/dialog_ui_setup_instructions.txt"
+2. Add a Node as a child of the NPC node and name it "DialogInteraction"
+3. Attach the "NPCDialogInteraction.gd" script to this node (Scripts/Characters/NPCDialogInteraction.gd)
+4. Configure the interaction parameters as in Option A
+5. Configure the dialog parameters in the Inspector:
+   - npc_name: The name of the NPC to display in the dialog
+   - dialog_lines: An array of strings containing the NPC's dialog lines
+   - dialog_ui_path: The path to the DialogUI node in your scene
+
+For both options, add the player to a group for the interaction script to find it:
+- Open the player scene
+- Select the root node
+- In the Inspector, go to Node > Groups and add "player" (lowercase)
+- For compatibility, you can also add "Player" (uppercase) as an additional group
+
+## 6. Save the Scene
+
+1. Save the scene as "npc.tscn" in the Scenes/Characters/ directory
+
+## 7. Instance in Level
+
+To add the NPC to your level:
+1. Open your level scene (e.g., prototype.tscn)
+2. Instance the npc.tscn scene
+3. Position the NPC where you want it in the level
+4. The NPC will automatically start wandering around its initial position
+
+## Notes on NPC Behavior
+
+- The NPC will wander randomly within the radius specified in the script (default: 5.0 units)
+- Wander timing is randomized between min and max values (default: 3-8 seconds)
+- The NPC uses the same animation states as the player but only uses idle and walk animations
+- You can adjust movement parameters in the Inspector after selecting the NPC node

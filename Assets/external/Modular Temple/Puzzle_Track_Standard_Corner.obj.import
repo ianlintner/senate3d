@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bo20h28wjh2ub"
+path="res://.godot/imported/Puzzle_Track_Standard_Corner.obj-41bebd0572d0d3bcefd3322a53f04ebd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Puzzle_Track_Standard_Corner.obj-41bebd0572d0d3bcefd3322a53f04ebd.mesh"]
+
+source_file="res://Assets/external/Modular Temple/Puzzle_Track_Standard_Corner.obj"
+dest_files=["res://.godot/imported/Puzzle_Track_Standard_Corner.obj-41bebd0572d0d3bcefd3322a53f04ebd.mesh", "res://.godot/imported/Puzzle_Track_Standard_Corner.obj-41bebd0572d0d3bcefd3322a53f04ebd.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
