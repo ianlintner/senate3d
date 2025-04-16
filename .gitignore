@@ -1,0 +1,177 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Mono-specific ignores
+.mono/
+data_*/
+.godot/
+mono_crash.*.json
+
+# Build directories
+build/
+builds/
+bin/
+obj/
+
+# Generated files
+*.gen.*
+*.generated.*
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+.idea/
+.vs/
+*.code-workspace
+
+# Project-specific ignores
+# Add any project-specific ignores here
+
+# Godot 4.x shader compilation cache
+.godot/shader_cache/
+
+# Godot 4.x editor settings
+.godot/editor/
+.godot/imported/
+
+# Godot 4.x project settings cache
+.godot/global_script_class_cache.cfg
+
+# Godot 4.x scene and resource cache
+.godot/uid_cache.bin
+
+# Godot 4.x shader cache
+.godot/shader_cache/
+
+# Godot 4.x editor history
+.godot/editor/filesystem_cache*.cfg
+.godot/editor/script_editor_cache.cfg
+
+# Godot 4.x editor layout
+.godot/editor/editor_layout.cfg
+
+# Godot 4.x project settings
+.godot/project_metadata.cfg
+
+# Godot 4.x recent projects
+.godot/editor/recent_dirs
+
+# Godot 4.x script cache
+.godot/script_cache/
+
+# Godot 4.x shader cache
+.godot/shader_cache/
+
+# Godot 4.x imported assets
+.godot/imported/
+
+# Godot 4.x editor settings
+.godot/editor/
+
+# Godot 4.x project settings cache
+.godot/global_script_class_cache.cfg
+
+# Godot 4.x scene and resource cache
+.godot/uid_cache.bin
+
+# Godot 4.x shader cache
+.godot/shader_cache/
+
+# Godot 4.x editor history
+.godot/editor/filesystem_cache*.cfg
+.godot/editor/script_editor_cache.cfg
+
+# Godot 4.x editor layout
+.godot/editor/editor_layout.cfg
+
+# Godot 4.x project settings
+.godot/project_metadata.cfg
+
+# Godot 4.x recent projects
+.godot/editor/recent_dirs
+
+# Godot 4.x script cache
+.godot/script_cache/
+
+# Godot 4.x shader cache
+.godot/shader_cache/
+
+# Godot 4.x imported assets
+.godot/imported/
+
+# Godot 4.x editor settings
+.godot/editor/
+
+# Godot 4.x project settings cache
+.godot/global_script_class_cache.cfg
+
+# Godot 4.x scene and resource cache
+.godot/uid_cache.bin
+
+# Godot 4.x shader cache
+.godot/shader_cache/
+
+# Godot 4.x editor history
+.godot/editor/filesystem_cache*.cfg
+.godot/editor/script_editor_cache.cfg
+
+# Godot 4.x editor layout
+.godot/editor/editor_layout.cfg
+
+# Godot 4.x project settings
+.godot/project_metadata.cfg
+
+# Godot 4.x recent projects
+.godot/editor/recent_dirs
+
+# Godot 4.x script cache
+.godot/script_cache/
+
+# Godot 4.x shader cache
+.godot/shader_cache/
+
+# Godot 4.x imported assets
+.godot/imported/
+
+# Asset files that should be version controlled
+# Uncomment if you want to version control these files
+#*.png
+#*.jpg
+#*.jpeg
+#*.svg
+#*.ttf
+#*.obj
+#*.mtl
+#*.glb
+#*.gltf
+#*.material
+#*.tres
+#*.tscn
+#*.mesh
+#*.dae
+#*.fbx
