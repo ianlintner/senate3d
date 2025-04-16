@@ -70,6 +70,7 @@ directional_shadow_split_3 = 0.2
 directional_shadow_blend_splits = true
 
 [node name="Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
 mesh = SubResource("PlaneMesh_mmup0")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Floor"]
@@ -106,4 +107,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.21248, 0.0733498, 6.18931)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.09258, 0.0370367, 6.22841)
 
 [node name="ancient_temple" parent="." instance=ExtResource("7_7wgvv")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 15.719, 0, 0)
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.2346, 0, 0)
