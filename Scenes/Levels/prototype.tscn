@@ -1,12 +1,14 @@
-[gd_scene load_steps=20 format=3 uid="uid://coue2qehpn4fr"]
+[gd_scene load_steps=22 format=3 uid="uid://coue2qehpn4fr"]
 
 [ext_resource type="Texture2D" uid="uid://b8q44ipg8a3cq" path="res://Assets/Textures/Black.png" id="1_hwes2"]
+[ext_resource type="PackedScene" uid="uid://c18u7gilxwrog" path="res://Scenes/Characters/dialog_ui.tscn" id="1_n3ive"]
 [ext_resource type="Texture2D" uid="uid://doyodkg1ds7td" path="res://Assets/Textures/Sky.png" id="1_rrvcb"]
 [ext_resource type="PackedScene" uid="uid://cr2ersq7g6q6f" path="res://Scenes/Characters/player.tscn" id="2_1g73n"]
 [ext_resource type="Texture2D" uid="uid://gwt4mrbmdv01" path="res://Assets/Textures/Orange.png" id="2_087ax"]
 [ext_resource type="Texture2D" uid="uid://dkpqh8de7tb3n" path="res://Assets/Textures/Green.png" id="3_qkav0"]
 [ext_resource type="PackedScene" uid="uid://86460t3cuvkj" path="res://Scenes/Characters/npc.tscn" id="6_lkf0i"]
 [ext_resource type="PackedScene" uid="uid://lnlvbictyf5y" path="res://ancient_temple2.tscn" id="7_7wgvv"]
+[ext_resource type="Script" uid="uid://c20bpk2ywwdu4" path="res://Scripts/Characters/NPCDialogInteraction.gd" id="8_6lytq"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_6c4vd"]
 panorama = ExtResource("1_rrvcb")
@@ -58,11 +60,14 @@ data = PackedVector3Array(-12.5, 2.5, 2.5, 2.5, -2.5, 2.5, -2.5, -2.5, 2.5, -12.
 
 [node name="Prototype" type="Node3D"]
 
+[node name="DialogUI" parent="." instance=ExtResource("1_n3ive")]
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_ctwiv")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866026, -0.433013, 0.249999, 0.5, -0.75, 0.433012, -1.3411e-07, 0.499999, 0.866026, 0, 0, 0)
+visible = false
 shadow_enabled = true
 directional_shadow_split_1 = 0.07
 directional_shadow_split_2 = 0.12
@@ -71,6 +76,7 @@ directional_shadow_blend_splits = true
 
 [node name="Floor" type="MeshInstance3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+visible = false
 mesh = SubResource("PlaneMesh_mmup0")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Floor"]
@@ -97,15 +103,21 @@ surface_material_override/0 = SubResource("StandardMaterial3D_pfpgv")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Slope/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_rit6o")
 
-[node name="Player" parent="." instance=ExtResource("2_1g73n")]
+[node name="Player" parent="." groups=["Player", "player"] instance=ExtResource("2_1g73n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.88514)
 
 [node name="NPC" parent="." instance=ExtResource("6_lkf0i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.21248, 0.0733498, 6.18931)
 
-[node name="NPC" parent="NPC" instance=ExtResource("6_lkf0i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.09258, 0.0370367, 6.22841)
+[node name="DialogInteraction" type="Node" parent="NPC"]
+script = ExtResource("8_6lytq")
+npc_name = "Cicero"
+dialog_lines = Array[String](["Hello there!", "Nice weather today, isn't it?", "Hoy Hoy!"])
+dialog_ui_path = NodePath("../../DialogUI")
 
 [node name="ancient_temple" parent="." instance=ExtResource("7_7wgvv")]
 physics_interpolation_mode = 1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.2346, 0, 0)
+
+[node name="NPC2" parent="." instance=ExtResource("6_lkf0i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.30506, 0.110387, 12.4177)

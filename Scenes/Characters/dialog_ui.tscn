@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://c18u7gilxwrog"]
+
+[ext_resource type="Script" uid="uid://det5n8dnvxyin" path="res://Scripts/UI/NPCDialog.gd" id="1_cskbt"]
+
+[node name="DialogUI" type="Control"]
+layout_mode = 3
+anchor_left = 0.056
+anchor_top = 0.5
+anchor_right = 0.984
+anchor_bottom = 1.0
+offset_left = 195.488
+offset_top = 63.0
+offset_right = -873.568
+offset_bottom = -261.0
+script = ExtResource("1_cskbt")
+dialog_box_path = NodePath("DialogPanel")
+dialog_text_path = NodePath("DialogPanel/DialogText")
+dialog_name_path = NodePath("DialogPanel/NameLabel")
+
+[node name="DialogPanel" type="Panel" parent="." groups=["dialog_ui"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 646.0
+offset_bottom = 228.0
+
+[node name="NameLabel" type="Label" parent="DialogPanel"]
+layout_mode = 0
+offset_top = -32.0
+offset_right = 103.0
+offset_bottom = -9.0
+
+[node name="DialogText" type="Label" parent="DialogPanel"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 8.0
+offset_right = 623.0
+offset_bottom = 211.0
